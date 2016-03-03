@@ -11,12 +11,6 @@
 
     = favicon_link_tag 'favicon.png'
     = yield :head
-    %meta(name="twitter:card" content="summary_large_image")
-    %meta(name="twitter:site" content="@hashrockettil")
-    %meta(name="twitter:creator" content="@hashrockettil")
-    %meta(name="twitter:title" content="Today I Learned: a Hashrocket Project")
-    %meta(name="twitter:description" content="TIL is a project by Hashrocket to catalogue the sharing & accumulation of knowledge as it happens day-to-day. Posts have a 200-word limit and any Hashrocket team member can contribute. We hope you enjoy learning along with us.")
-    %meta(name="twitter:image" content="//til.hashrocket.com/assets/til_twittercard.png")
   %body
     - if developer_signed_in?
       %nav.admin_panel
@@ -30,7 +24,6 @@
     %header.site_head
       %div
         %h1= link_to SITE_NAME, root_path
-        %h2= link_to "A Hashrocket project", "https://hashrocket.com"
 
     = render 'shared/flash'
 
