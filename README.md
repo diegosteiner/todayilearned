@@ -18,10 +18,7 @@ follow these setup steps:
 ```sh
 $ git clone https://github.com/hashrocket/hr-til
 $ cd hr-til
-$ bundle install
-$ cp config/application.yml{.example,}
-$ rake db:setup
-$ rails s
+$ bin/setup
 ```
 
 Authentication is managed by Omniauth and Google. To whitelist a domain or multiple domains, add the domain name to your environmental variables:
