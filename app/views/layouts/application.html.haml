@@ -31,6 +31,8 @@
 
     %nav.site_nav
       %ul
+        %li.site_nav__post
+          = link_to "+", new_post_path, class: "site_nav__link"
         %li.site_nav__about
           = link_to "?", "#", class: "site_nav__link"
           .site_nav__toggle
